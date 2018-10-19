@@ -1,0 +1,6 @@
+package com.qa.TaskOne;
+
+public class TaskChecker {
+
+	@FindBy()
+}

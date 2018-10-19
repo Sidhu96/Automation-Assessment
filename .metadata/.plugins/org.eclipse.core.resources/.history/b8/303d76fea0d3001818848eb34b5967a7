@@ -1,0 +1,43 @@
+package com.qa.TaskOne;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class WebsiteNav {
+
+	@FindBy(xpath="//*[@id=\"j_username\"]")
+		private WebElement adminUsername;
+		
+		public WebElement typeAdminUsername() {
+			return adminUsername;
+		}
+	@FindBy(xpath="/html/body/div/div/form/div[2]/input")
+		private WebElement adminPass; 
+	
+		public WebElement typeAdminPass() {
+			return adminPass;
+		}
+	
+	@FindBy(xpath="//*[@id=\"tasks\"]/div[4]/a[2]")
+		private WebElement manageJenkins;
+	
+		public WebElement navManageJenkins() {
+			return manageJenkins; 
+		}
+		
+	@FindBy(xpath="//*[@id=\"management-links\"]/tbody/tr[15]/td[2]/div[1]/a")
+		private WebElement manageUsers;
+	
+		public WebElement navManageUsers() {
+			return manageUsers; 		
+		}
+		
+	@FindBy(linkText = "Create User") 
+		private WebElement createUserPage; 
+	
+		public WebElement navCreateUserPage() {
+			return createUserPage; 
+		}
+		
+}
+

@@ -1,0 +1,19 @@
+package com.qa.TaskOne;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class CreateUser {
+		
+	@FindBy(linkText = "Manage Jenkins")
+		private WebElement manage; 
+	
+	public WebElement clickManage() {
+		return manage; 
+	}
+	
+	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Install as Windows Service'])[1]/following::dt[1]")
+		private WebElement manageUser; 
+		
+}

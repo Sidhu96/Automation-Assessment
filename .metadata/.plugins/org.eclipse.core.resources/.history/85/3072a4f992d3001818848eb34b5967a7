@@ -1,0 +1,8 @@
+package com.qa.TaskOne;
+
+public class T1constant {
+	public static final String jenkins = "http://localhost:8080/";
+	public static final String manage = "http://localhost:8080/manage"; 
+	public static final String manageUser = "http://localhost:8080/securityRealm/"; 
+
+}
